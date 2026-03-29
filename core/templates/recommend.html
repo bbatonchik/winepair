@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Рекомендации</title>
+</head>
+<body>
+
+    <h1>Рекомендуемые вина к блюду: {{ dish.name }}</h1>
+
+    <ul>
+        {% for wine in wines %}
+            <li>
+                {{ wine.name }} ({{ wine.country }})
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Назад</a>
+
+</body>
+</html>
